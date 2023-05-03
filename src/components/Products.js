@@ -17,6 +17,8 @@ function Products() {
     setSelectedProduct(product);
   };
 
+  //DELET
+
   const handleDeleteClick = (id) => {
     fetch(`https://dummyjson.com/products/${id}`, {
       method: 'DELETE'
