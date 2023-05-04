@@ -21,6 +21,7 @@ function Products() {
     setSelectedProduct(product);
   };
 
+
   const handleAddProductClick = () => {
     setIsFormVisible(true);
   };
@@ -49,6 +50,21 @@ function Products() {
 
   // Change page
   const paginate = pageNumber => setCurrentPage(pageNumber);
+
+  //DELET
+
+  const handleDeleteClick = (id) => {
+    fetch(`https://dummyjson.com/products/${id}`, {
+      method: 'DELETE'
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Remove the deleted product from the state
+      setProducts(products.filter(product => product.id !== id));
+    })
+    .catch(error => console.log(error));
+  };
+
 
   return (
     <div className='container-fluid'>
@@ -85,7 +101,7 @@ function Products() {
                 <td><img src={product.thumbnail} alt={product.title} width="100" /></td>
                 <td>
                   <button className="btn btn-primary mr-2">Edit</button>
-                  <button className="btn btn-danger">Delete</button>
+                  <button className="btn btn-danger" onClick={() => handleDeleteClick(product.id)}>Delete</button>
                 </td>
               </tr>
             ))}
