@@ -36,3 +36,106 @@
     transform: rotate(360deg);
   }
 }
+
+
+.navigation-bar{
+  background-color: #027BD3;
+  width: 215px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.navLink{
+  color: #ffffff;
+  padding: 7px;
+}
+
+.vertical-line {
+  border-left: 2px solid rgb(255, 255, 255);
+  height: 20px;
+  top: 9px;
+  left: 100px;
+  position: absolute;
+}
+
+.vertical-line2 {
+  border-left: 2px solid rgb(255, 255, 255);
+  height: 20px;
+  top: 9px;
+  left: 155px;
+  position: absolute;
+}
+
+.Welcome-div{
+  background-color: #F2F2F2;
+  width: 90%;
+  height: 80%;
+  left: 100px;
+  margin-top: 50px;
+ position: absolute; 
+}
+
+.Header1{
+  color: #027BD3;
+  font-size: 80px;
+  padding: 30px;
+}
+
+.p-line{
+  font-size: 25px;
+}
+
+.logo-div{
+  background-color: #F9F9F9;
+  margin-top: 40px;
+}
+
+.samsung-logo{
+  width: 350px;
+}
+
+.apple-logo{
+  width: 230px;
+}
+
+.oppo-logo{
+  width: 350px;
+  margin-right: 50px;
+  /* padding-right: ; */
+  position: relative;
+  right: 20px;
+}
+
+.huawei-logo{
+  width: 130px;
+  position: relative;
+  right: 20px;
+  
+}
+
+.footer1{
+  color: #8f8f8f;
+  margin-top: 80px;
+  font-size: 23px;
+}
+
+.infinix-logo{
+  width: 250px;
+  margin-left: 50px;
+  
+}
+
+.p-line-usage{
+  margin-left: 65px;
+  /* text-align: left; */
+  font-size: 25px;
+}
+
+.usage-div{
+  background-color: #F9F9F9;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
